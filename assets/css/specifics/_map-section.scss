@@ -43,7 +43,7 @@
         }
       }
       .info-close {
-        cursor-pointer;
+        cursor: pointer;
         height: 1.5rem;
         position: absolute;
         right: 1rem;
@@ -61,5 +61,14 @@
   .map-right {
     background-color: var(--blueish);
     padding: 10%;
+    h1 + p {
+      margin-top: 2.5rem;
+      @media (min-width: 768px) {
+        margin-top: 3.5rem;
+      }
+    }
+    form {
+      margin-top: 3.5rem;
+    }
   }
 }

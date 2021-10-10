@@ -86,21 +86,9 @@
       }
       a {
         background-color: white;
-        color: var(--darkblue);
+        color: var(--darkblue) !important;
         font-weight: 600;
       }
-      // a {
-      //   font-size: 1.7rem;
-      //   font-family: 'Poppins';
-      //   line-height: inherit;
-      //   margin-top: 3.5rem;
-      //   max-height: max-content;
-      //   max-width: max-content;
-      //   padding: 1.2rem 1.8rem;
-      //   @media (min-width: 1200px) {
-      //     margin-top: 5.5rem;
-      //   }
-      // }
       .header-logos-wrapper {
         margin: 3.5rem auto 0;
         max-width: 120rem;

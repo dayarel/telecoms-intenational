@@ -140,6 +140,12 @@ jQuery(function ($) {
     }
   });
 
+  // Close info box in map section
+
+  $('.info-close').on('click', function () {
+    $(this).parent().fadeOut();
+  });
+
   // Header Logos Slider
 
   $('.header-logos').slick({
