@@ -1,0 +1,77 @@
+section {
+  padding: 55px 0;
+  @media (min-width: 1200px) {
+    padding: 95px 0;
+  }
+  &.first {
+    margin-top: 225px;
+  }
+  &#hero {
+    padding: 0;
+  }
+  a:not(.center) {
+    @media (min-width: 768px) {
+      margin: 65px 0 0;
+    }
+  }
+  &.svg-section {
+    padding: 0;
+    #heading-svg {
+      display: block;
+      max-width: 100%;
+      visibility: hidden;
+      margin-bottom: 75px;
+      @media (min-width: 1200px) {
+        width: 60%;
+        margin: 0 auto 125px;
+      }
+      object {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    & + section {
+      padding-top: 0;
+    }
+  }
+  &.header-section {
+    @media (min-width: 992px) {
+      display: flex;
+    }
+    h1 {
+      br {
+        display: none;
+      }
+      @media (min-width: 992px) {
+        flex: 4;
+        max-width: 240px;
+        min-width: 240px;
+        br {
+          display: block;
+        }
+      }
+      @media (min-width: 1200px) {
+        max-width: 320px;
+        min-width: 320px;
+      }
+    }
+    & > div {
+      margin-top: 25px;
+      @media (min-width: 768px) {
+        margin-top: 55px;
+      }
+      @media (min-width: 992px) {
+        flex: 8;
+        margin-top: 0;
+        margin-left: 110px;
+      }
+      @media (min-width: 1200px) {
+        margin-left: 159px;
+      }
+
+      p + p {
+        margin-top: 35px;
+      }
+    }
+  }
+}

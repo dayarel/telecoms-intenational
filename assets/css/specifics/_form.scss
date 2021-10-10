@@ -1,0 +1,126 @@
+form#contact {
+  margin-top: 46px;
+  position: relative;
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+  span {
+    display: block;
+  }
+  input,
+  textarea,
+  select {
+    ::placeholder {
+      text-align: left !important;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 36px;
+      line-height: 3.6rem;
+      opacity: 0.5;
+    }
+    width: 100%;
+    background-color: transparent;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+    border-radius: 3px;
+    border: 1px solid white;
+    padding-left: 11px;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin-top: 20px;
+  }
+  input,
+  select {
+    height: 36px;
+    &[type='submit'] {
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-size: 1.5rem;
+      line-height: 55px;
+      line-height: 5.5rem;
+      height: 55px;
+      text-align: center;
+      max-width: 345px;
+      transition: color 0.35s ease-in-out;
+      width: 100%;
+      &:hover {
+        background-color: white;
+        color: #031759 !important;
+      }
+      @media (min-width: 768px) {
+        max-width: 295px;
+      }
+    }
+  }
+  option {
+    color: white;
+    background-color: var(--blueish);
+  }
+  textarea {
+    height: 190px;
+    margin-top: 21px;
+    color: white;
+  }
+  .name-wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        flex: 0 0 48%;
+        margin: 0;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Custom Form 7 Styles override
+
+.wpcf7-not-valid-tip {
+  background-color: #dc3232;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  position: relative;
+  &:after {
+    background-color: #dc3232;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    height: 12px;
+    left: 15px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -6px;
+    width: 12px;
+  }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  border: none;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  background-color: #ffb900;
+  border-radius: 5px;
+  color: #424242;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px 10px;
+}

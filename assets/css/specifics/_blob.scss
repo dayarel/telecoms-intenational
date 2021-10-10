@@ -1,0 +1,104 @@
+.blob {
+  margin: 145px 0;
+  padding: 0;
+  @media (min-width: 768px) {
+    margin: 265px 0;
+  }
+  @media (min-width: 1200px) {
+    margin: 465px 0;
+  }
+  &.first {
+    margin-top: 215px;
+    @media (min-width: 768px) {
+      margin-top: 265px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 465px;
+    }
+  }
+  & + .blob {
+    margin-top: 45px;
+    @media (min-width: 768px) {
+      margin-top: 135px;
+    }
+    @media (min-width: 1200px) {
+      margin: 215px 0;
+    }
+  }
+  .blob-wrapper {
+    position: relative;
+    .blob-shape {
+      height: 40vh;
+      min-height: 350px;
+      min-width: 350px;
+      overflow: visible;
+      position: absolute;
+      transform: translateY(-50%);
+      width: 40vh;
+      @media (min-width: 768px) {
+        min-height: 525px;
+        min-width: 525px;
+      }
+      @media (min-width: 1200px) {
+        min-height: 800px;
+        min-width: 800px;
+      }
+      svg {
+        overflow: visible;
+      }
+      &#blob1 {
+        top: 50%;
+        right: -35%;
+        @media (min-width: 1600px) {
+          right: 0;
+        }
+      }
+      &#blob2 {
+        top: 20%;
+        left: -40%;
+        @media (min-width: 1600px) {
+          left: -15%;
+        }
+      }
+      &#blob3 {
+        top: 37%;
+        right: -30%;
+        width: 90%;
+        height: 90%;
+        @media (min-width: 768px) {
+          width: 40vh;
+          height: 40vh;
+        }
+        @media (min-width: 1600px) {
+          right: 0;
+        }
+      }
+    }
+    .blob-content {
+      @media (min-width: 1200px) {
+        max-width: 950px;
+        margin: 0 auto;
+      }
+      h1 {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        max-width: 950px;
+        padding: 0;
+        width: 75%;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.16);
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+        br {
+          @media (min-width: 768px) {
+            display: none;
+          }
+        }
+        &.full {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

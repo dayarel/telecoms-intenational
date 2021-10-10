@@ -1,0 +1,15 @@
+main {
+  background: linear-gradient(
+    180deg,
+    rgba(1, 124, 165, 1) 0%,
+    rgba(3, 23, 89, 1) 15%,
+    rgba(3, 23, 89, 1) 35%,
+    rgba(1, 124, 165, 1) 100%
+  );
+  overflow-x: hidden;
+  .container {
+    width: 79.5%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}

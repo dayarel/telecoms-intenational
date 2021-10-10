@@ -1,0 +1,90 @@
+#services {
+  padding-top: 0;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 125px;
+  }
+  .service-single {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @media (min-width: 768px) and (max-width: 991px) {
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+    }
+    &:not(:first-child) {
+      margin-top: 45px;
+    }
+    @media (min-width: 768px) {
+      flex: 0 0 43%;
+      &:first-child,
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+    .service-image {
+      @media (min-width: 768px) and (max-width: 991px) {
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+      }
+      img {
+        height: auto;
+        width: 65px;
+        margin-right: 20px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin: 0;
+        }
+        @media (min-width: 992px) {
+          margin-right: 45px;
+        }
+        @media (min-width: 1200px) {
+          margin-right: 65px;
+        }
+      }
+    }
+    .service-container {
+      h2 {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 22px;
+        line-height: 2.2rem;
+        @media (min-width: 768px) {
+          margin-top: 30px;
+          font-size: 32px;
+          font-size: 3.2rem;
+          line-height: 32px;
+          line-height: 3.2rem;
+        }
+        @media (min-width: 992px) {
+          margin-top: 0;
+        }
+      }
+      p {
+        font-size: 19px;
+        font-size: 1.9rem;
+        margin-top: 15px;
+        @media (min-width: 768px) {
+          font-size: 24px;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+      margin-top: 75px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 95px;
+    }
+  }
+}

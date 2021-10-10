@@ -1,0 +1,15 @@
+<svg id="tick" xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #02eff3;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_27" data-name="Grupo 27">
+    <g id="Grupo_26" data-name="Grupo 26">
+      <path id="Trazado_66" data-name="Trazado 66" class="cls-1" d="M39,0A39,39,0,1,0,78,39,39,39,0,0,0,39,0Zm0,75.484A36.484,36.484,0,1,1,75.484,39,36.484,36.484,0,0,1,39,75.484Z"/>
+      <path id="Trazado_67" data-name="Trazado 67" class="cls-1" d="M152.71,156.452l-25.53,25.53-12.949-12.949a1.258,1.258,0,0,0-1.779,1.779L126.29,184.65a1.258,1.258,0,0,0,1.779,0l26.419-26.419a1.258,1.258,0,0,0-1.779-1.779Z" transform="translate(-94.47 -131.551)"/>
+    </g>
+  </g>
+</svg>

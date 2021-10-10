@@ -1,0 +1,28 @@
+#numbers {
+  margin: 0 auto;
+  padding: 75px 0 120px 0;
+  width: 100%;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 27%;
+  }
+  @media (min-width: 1200px) {
+    max-width: 83%;
+  }
+  .number-wrapper {
+    align-items: center;
+    display: flex;
+    h1 {
+      display: inline;
+      span {
+        font-weight: 400;
+      }
+      br {
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
